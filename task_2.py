@@ -8,7 +8,7 @@ def is_prime(n: int) -> bool:
         return True
     return False
 
-assert is_prime(28)
-assert not is_prime(23)
-assert not is_prime(5)
+assert not is_prime(28)
+assert  is_prime(23)
+assert  is_prime(5)
 print("Tests passed")
