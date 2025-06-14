@@ -18,8 +18,12 @@ def get_pairs_number(lst: list[int], n) -> list[tuple]:
                     res.append(cort)
                     lst.remove(i)
                     lst.remove(k)
+                    break
+
+
 
 
     return res
-print(get_pairs_number([1, 2, 4, 3, 5, 2], 7))
-print(get_pairs_number([1, 2, 4, 3, 5, 2, 2], 4))
+# print(get_pairs_number([1, 2, 4, 3, 5, 2, 6], 7))
+print(get_pairs_number([1, 2, 4, 3, 5, 2, 3, 3, 1, 2], 6))
+
