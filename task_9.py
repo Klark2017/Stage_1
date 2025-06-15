@@ -11,19 +11,16 @@ def get_pairs_number(lst: list[int], n) -> list[tuple]:
     for i in lst:
         for k in lst[1:]:
             if i + k == n:
-                if lst.index(i) == lst.index(k):
-                    continue
-                else:
-                    cort = (i,k)
-                    res.append(cort)
-                    lst.remove(i)
-                    lst.remove(k)
-                    break
+                 cort = (i,k)
+                 res.append(cort)
+                 lst.remove(i)
+                 lst.remove(k)
+                 break
 
 
 
 
     return res
-# print(get_pairs_number([1, 2, 4, 3, 5, 2, 6], 7))
-print(get_pairs_number([1, 2, 4, 3, 5, 2, 3, 3, 1, 2], 6))
+print(get_pairs_number([1, 2, 4, 3, 5, 2, 6], 4))
+print(get_pairs_number([1, 2, 4, 3, 5, 2, 3, 3, 3, 5, 1, 3, 3, 2], 6))
 
